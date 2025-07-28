@@ -8,7 +8,7 @@ export default function ViewAnswersPage() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/quiz/submission/${id}`).then((res) => setData(res.data));
+    axios.get(`https://ak-quizz-app-b.onrender.com/api/quiz/submission/${id}`).then((res) => setData(res.data));
   }, []);
 
   if (!data) return <p className="text-center mt-10">Loading...</p>;
@@ -27,7 +27,7 @@ export default function ViewAnswersPage() {
       <Typography variant="h6" className="text-white">Score: {data.score} / {data.answers.length}</Typography>
       <a
   href={`https://web.whatsapp.com/send?phone=917502787852&text=${encodeURIComponent(
-    `I scored ${data.score} on the quiz! View here: http://localhost:5173/result/${id}`
+    `I scored ${data.score} on the quiz! View here: https://ak-quizz-app-b.onrender.com/result/${id}`
   )}`}
   target="_blank"
   rel="noreferrer"
