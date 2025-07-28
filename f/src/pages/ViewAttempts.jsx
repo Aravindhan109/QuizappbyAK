@@ -99,7 +99,7 @@ export default function ViewAttemptsPage() {
             },
           }}
         >
-          <InputLabel>Select Quiz</InputLabel>
+          <InputLabel classname="text-black">Select Quiz</InputLabel>
           <Select
             value={selectedQuizId}
             onChange={handleQuizChange}
