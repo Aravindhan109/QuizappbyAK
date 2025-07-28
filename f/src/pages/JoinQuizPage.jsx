@@ -9,7 +9,7 @@ export default function JoinQuizPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/quiz/list").then((res) => {
+    axios.get("https://ak-quizz-app-b.onrender.com/api/quiz/list").then((res) => {
       setQuizzes(res.data);
     });
   }, []);
@@ -22,7 +22,7 @@ export default function JoinQuizPage() {
   const passcode = prompt("Enter passcode:");
   if (passcode !== "1234") return alert("Invalid passcode");
 
-  const res = await axios.post("http://localhost:5000/api/quiz/join", {
+  const res = await axios.post("https://ak-quizz-app-b.onrender.com/api/quiz/join", {
     quizId,
     passcode,
   });
