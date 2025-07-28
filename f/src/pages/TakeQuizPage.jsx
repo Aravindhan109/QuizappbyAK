@@ -36,7 +36,7 @@ export default function TakeQuizPage() {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/quiz/submit", {
+      const res = await axios.post("https://ak-quizz-app-b.onrender.com/api/quiz/submit", {
         quizId: id,
         username,
         userAnswers: answers,
