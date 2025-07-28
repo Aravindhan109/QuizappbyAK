@@ -23,15 +23,15 @@ export default function ViewAnswersPage() {
     <div className="p-6 max-w-5xl mx-auto space-y-6" 
     
     >
-      <Typography variant="h5" className="text-white">Result of {data.username}</Typography>
-      <Typography variant="h6" className="text-white">Score: {data.score} / {data.answers.length}</Typography>
+      <Typography variant="h5" className="text-black">Result of {data.username}</Typography>
+      <Typography variant="h6" className="text-black">Score: {data.score} / {data.answers.length}</Typography>
       <a
   href={`https://web.whatsapp.com/send?phone=917502787852&text=${encodeURIComponent(
     `I scored ${data.score} on the quiz! View here: https://ak-quizz-app-b.onrender.com/result/${id}`
   )}`}
   target="_blank"
   rel="noreferrer"
-  className="text-white underline"
+  className="text-black underline"
 >
   Share on WhatsApp Web
 </a>
