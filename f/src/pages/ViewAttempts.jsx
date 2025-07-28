@@ -80,10 +80,10 @@ export default function ViewAttemptsPage() {
           className="mb-6"
           sx={{
             "& .MuiInputLabel-root": {
-              color: "white",
+              color: "black",
             },
             "& .MuiOutlinedInput-root": {
-              color: "white",
+              color: "black,
               "& fieldset": {
                 borderColor: "black",
               },
@@ -95,7 +95,7 @@ export default function ViewAttemptsPage() {
               },
             },
             "& .MuiSvgIcon-root": {
-              color: "white",
+              color: "black",
             },
           }}
         >
