@@ -31,7 +31,7 @@ export default function ViewAttemptsPage() {
   useEffect(() => {
     const fetchAllQuizzes = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/quiz/all");
+        const res = await axios.get("https://ak-quizz-app-b.onrender.com/api/quiz/all");
         setQuizList(res.data);
       } catch (err) {
         console.error(err);
@@ -46,7 +46,7 @@ export default function ViewAttemptsPage() {
     setSelectedQuizId(quizId);
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:5000/api/quiz/${quizId}`);
+      const res = await axios.get(`https://ak-quizz-app-b.onrender.com/api/quiz/${quizId}`);
       setTitle(res.data.title);
       const sorted = res.data.submissions.sort((a, b) => b.score - a.score);
       setSubmissions(sorted);
