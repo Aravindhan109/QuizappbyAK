@@ -30,7 +30,7 @@ export default function CreateQuizPage() {
       return;
     }
 
-    await axios.post("http://localhost:5000/api/quiz/create", {
+    await axios.post("https://ak-quizz-app-b.onrender.com/api/quiz/create", {
       title,
       questions,
     });
